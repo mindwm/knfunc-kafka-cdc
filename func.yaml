@@ -1,17 +1,22 @@
 name: kafka-cdc
 version: 0.1.0
-digest: <will be filled with a repoDigest>
+digest: sha256:220402073a24a8dd9936280ee34e09f5ba107ba35b4ea015d68ed39105444bc6
 registry: 10.20.30.11:8080
 context: cyan
 filters:
   - all:
       - exact:
           type: dev.knative.kafka.event
+      - not:
+          prefix:
+            source: org.mindwm
 run:
   envs:
     - name: OTEL_EXPORTER_OTLP_ENDPOINT
-      value: http://otel-collector-opentelemetry-collector.monitoring-ng:4317
+      value: http://otel-collector-opentelemetry-collector.monitoring:4317
     - name: OTEL_EXPORTER_OTLP_TRACES_ENDPOINT
-      value: http://tempo-distributor.monitoring-ng:4317/v1/traces
+      value: http://tempo.monitoring:4317/v1/traces
     - name: LOG_LEVEL
       value: INFO
+    - name: CONTEXT_NAME
+      value: cyan

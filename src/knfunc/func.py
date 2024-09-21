@@ -3,9 +3,11 @@ from mindwm import logging
 from mindwm.knfunc.decorators import Request, Response, app, event
 from mindwm.model.events import (KafkaCdc, MindwmEvent, from_request,
                                  to_response)
+import os
 
 logger = logging.getLogger(__name__)
 
+context_name = os.environ.get('CONTEXT_NAME', 'NO_CONTEXT')
 
 @event
 async def mindwm_cdc(obj: KafkaCdc, request: Request, response: Response):
@@ -13,8 +15,8 @@ async def mindwm_cdc(obj: KafkaCdc, request: Request, response: Response):
     res = graph.GraphObjectChanged.from_kafka_cdc(cdc_ev.data)
 
     new_ev = MindwmEvent(
-        source=f"org.mindwm.context.cyan.knfunc.kafka_cdc",
-        subject=f"org.mindwm.context.cyan.graph.{cdc_ev.data.payload.type}",
+        source=f"org.mindwm.context.{context_name}.knfunc.kafka_cdc",
+        subject=f"org.mindwm.context.{context_name}.graph.{cdc_ev.data.payload.type}",
         type=res.type,
         data=res,
         traceparent=res.obj.traceparent,

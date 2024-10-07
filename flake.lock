@@ -48,11 +48,11 @@
         "nixpkgs-lib": "nixpkgs-lib"
       },
       "locked": {
-        "lastModified": 1725015982,
-        "narHash": "sha256-1WXS/BBKZUcWlfeZL7U8ujuCdlLktImbpmJgN9zsZXM=",
+        "lastModified": 1727826117,
+        "narHash": "sha256-K5ZLCyfO/Zj9mPFldf3iwS6oZStJcU4tSpiXTMYaaL0=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "4f37dc19b47b50512008f38858734f8fa8a4e0cc",
+        "rev": "3d04084d54bedc3d6b8b736c70ef449225c361b1",
         "type": "github"
       },
       "original": {
@@ -126,11 +126,11 @@
         "strictjson-py": "strictjson-py"
       },
       "locked": {
-        "lastModified": 1725007210,
-        "narHash": "sha256-qkDeS4oJx0DuYd2lYumPbIMKx8IkVTnyy9AjN812znc=",
+        "lastModified": 1728320588,
+        "narHash": "sha256-R4CmThQokapkY9n+jYgMMC6yG/MA/HJuj2S0Pg/nQd4=",
         "owner": "mindwm",
         "repo": "mindwm-sdk-python-ng",
-        "rev": "cb0f956aaf216aecd0850a3848c7d0d446c212b5",
+        "rev": "9cae7942d7d1ba6c942c79b3b5cef1e7531dede4",
         "type": "github"
       },
       "original": {
@@ -179,14 +179,14 @@
     },
     "nixpkgs-lib": {
       "locked": {
-        "lastModified": 1722555339,
-        "narHash": "sha256-uFf2QeW7eAHlYXuDktm9c25OxOyCoUOQmh5SZ9amE5Q=",
+        "lastModified": 1727825735,
+        "narHash": "sha256-0xHYkMkeLVQAMa7gvkddbPqpxph+hDzdu1XdGPJR+Os=",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/a5d394176e64ab29c852d03346c1fc9b0b7d33eb.tar.gz"
+        "url": "https://github.com/NixOS/nixpkgs/archive/fb192fec7cc7a4c26d51779e9bab07ce6fa5597a.tar.gz"
       },
       "original": {
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/a5d394176e64ab29c852d03346c1fc9b0b7d33eb.tar.gz"
+        "url": "https://github.com/NixOS/nixpkgs/archive/fb192fec7cc7a4c26d51779e9bab07ce6fa5597a.tar.gz"
       }
     },
     "nixpkgs-lib_2": {

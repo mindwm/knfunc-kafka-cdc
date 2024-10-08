@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1722113426,
-        "narHash": "sha256-Yo/3loq572A8Su6aY5GP56knpuKYRvM2a1meP9oJZCw=",
+        "lastModified": 1728330715,
+        "narHash": "sha256-xRJ2nPOXb//u1jaBnDP56M7v5ldavjbtR6lfGqSvcKg=",
         "owner": "numtide",
         "repo": "devshell",
-        "rev": "67cce7359e4cd3c45296fb4aaf6a19e2a9c757ae",
+        "rev": "dd6b80932022cea34a019e2bb32f6fa9e494dfef",
         "type": "github"
       },
       "original": {
@@ -126,11 +126,11 @@
         "strictjson-py": "strictjson-py"
       },
       "locked": {
-        "lastModified": 1728320588,
-        "narHash": "sha256-R4CmThQokapkY9n+jYgMMC6yG/MA/HJuj2S0Pg/nQd4=",
+        "lastModified": 1728381511,
+        "narHash": "sha256-d6uzNpuo7jhCtGydddw2o7Z50kLAtvunv1V3m1mKFPo=",
         "owner": "mindwm",
         "repo": "mindwm-sdk-python-ng",
-        "rev": "9cae7942d7d1ba6c942c79b3b5cef1e7531dede4",
+        "rev": "4933e504a0b66c84b9f419601147eb485301299d",
         "type": "github"
       },
       "original": {

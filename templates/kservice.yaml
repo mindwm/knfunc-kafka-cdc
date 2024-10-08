@@ -1,0 +1,13 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: clipboard
+  namespace: context-philadelphia
+spec:
+  template:
+    spec:
+      imagePullSecrets:
+      - name: container-registry
+      containers:
+        - image: 192.168.122.182:8000
+          env: []

@@ -1,8 +1,8 @@
 name: kafka-cdc
-version: 0.1.0
-digest: sha256:220402073a24a8dd9936280ee34e09f5ba107ba35b4ea015d68ed39105444bc6
-registry: 10.20.30.11:8080
-context: cyan
+version: 0.1.2
+digest: sha256:2c7f65b469e21e484b3f5697c2820cfe798d700ba996a606a8912defa52f83d2
+registry: 192.168.122.182:8000
+context: philadelphia
 filters:
   - all:
       - exact:
@@ -19,4 +19,4 @@ run:
     - name: LOG_LEVEL
       value: INFO
     - name: CONTEXT_NAME
-      value: cyan
+      value: philadelphia

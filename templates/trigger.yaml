@@ -1,0 +1,28 @@
+apiVersion: eventing.knative.dev/v1
+kind: Trigger
+metadata:
+  name: knfunc-clipboard
+  namespace: context-philadelphia
+spec:
+  broker: context-broker
+  delivery:
+    deadLetterSink:
+      ref:
+        apiVersion: serving.knative.dev/v1
+        kind: Service
+        name: dead-letter
+        namespace: context-philadelphia
+  filter: {}
+  filters:
+    - all:
+        - exact:
+            type: dev.knative.kafka.event
+        - not:
+            prefix:
+              source: org.mindwm
+  subscriber:
+    ref:
+      apiVersion: serving.knative.dev/v1
+      kind: Service
+      name: clipboard
+      namespace: context-philadelphia

@@ -126,11 +126,11 @@
         "strictjson-py": "strictjson-py"
       },
       "locked": {
-        "lastModified": 1737575441,
-        "narHash": "sha256-cWqU4FsHegyCNdPqLMu/u38cUt8uUQSeKb4dQIF6HhQ=",
+        "lastModified": 1737577272,
+        "narHash": "sha256-dEfRaxlM3b3+dWIpxrl+OMmGUgz9sUvJq/n+moqImqY=",
         "owner": "mindwm",
         "repo": "mindwm-sdk-python-ng",
-        "rev": "e2bdd8f25aa994497b5b438f233c0ba60dce93bc",
+        "rev": "2e84f1d495427064b724902cc37695954e06266c",
         "type": "github"
       },
       "original": {
